@@ -25,11 +25,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import info.sayederfanarefin.torch.R;
@@ -57,10 +59,10 @@ import info.sayederfanarefin.torch.ui.fragment.dialog.WelcomeDialog;
 import info.sayederfanarefin.torch.ui.helper.DonateDialogListener;
 
 public class MainActivity extends AppCompatActivity implements TorchieManagerListener, DonateDialogListener {
-    ImageButton but_flash;
+    ImageView but_flash;
     SwitchCompat sw_func_toggle;
-
-    TransitionDrawable transAnimButFlash;
+//
+//    TransitionDrawable transAnimButFlash;
     DonateDialog donateDialog;
 
     boolean flashButtonStatus = false;
@@ -75,11 +77,11 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("");
 
-        but_flash = (ImageButton) findViewById(R.id.but_flash_pto);
+        but_flash = (ImageView) findViewById(R.id.but_flash_pto);
         sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
 
-        transAnimButFlash = (TransitionDrawable) but_flash.getBackground();
-        transAnimButFlash.resetTransition();
+//        transAnimButFlash = (TransitionDrawable) but_flash.getBackground();
+//        transAnimButFlash.resetTransition();
 
         if (SettingsUtils.isFirstTime(this)) {
             this.showDialogWelcome();
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
     @Override
     protected void onResume() {
         super.onResume();
-        transAnimButFlash.resetTransition();
+        //transAnimButFlash.resetTransition();
         if (isTorchieQuickServiceRunning()) {
             TorchieQuick.getInstance().registerTorchieManagerListener(this);
             if (this.isTorchOn()) {
@@ -225,9 +227,15 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
     private void setFlashButtonStatus(boolean enabled) {
         flashButtonStatus = enabled;
         if (flashButtonStatus) {
-            transAnimButFlash.startTransition(flashButAnimTime);
+            //transAnimButFlash.startTransition(flashButAnimTime);
+            //Log.v("----------xxx--------", "if");
+            but_flash.setImageResource(R.mipmap.btn_switch_on);
+
         } else {
-            transAnimButFlash.reverseTransition(flashButAnimTime);
+
+            but_flash.setImageResource(R.mipmap.btn_switch_off);
+
+            //Log.v("----------xxx--------", "else"); //transAnimButFlash.reverseTransition(flashButAnimTime);
         }
     }
 

@@ -55,22 +55,6 @@
             android:onClick="openAccessibilitySettings"
             android:orientation="horizontal">
 
-            <Space
-                android:layout_width="88dp"
-                android:layout_height="match_parent" />
-
-            <TextView
-                style="@style/TextAppearance.AppCompat.Menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="@string/torchie_functionality" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
             <android.support.v7.widget.SwitchCompat
                 android:id="@+id/sw_func_toggle"
                 android:layout_width="wrap_content"
@@ -78,9 +62,7 @@
                 android:layout_gravity="center_vertical"
                 android:clickable="false" />
 
-            <Space
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
+
         </LinearLayout>
 
 
@@ -96,17 +78,19 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/but_flash_pto"
                 android:layout_width="@dimen/but_flash_size"
                 android:layout_height="@dimen/but_flash_size"
                 android:layout_gravity="center"
-                android:background="@drawable/sw_flash"
                 android:clickable="true"
                 android:elevation="2dp"
                 android:onClick="toggleTorch"
-                android:src="@drawable/but_ripple"
+                android:src="@mipmap/btn_switch_off"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:translationZ="6dp" />
+
 
             <Space
                 android:layout_width="match_parent"

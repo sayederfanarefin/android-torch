@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "409532883943",
+    "firebase_url": "https://torch-d8b61.firebaseio.com",
+    "project_id": "torch-d8b61",
+    "storage_bucket": "torch-d8b61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409532883943:android:1db9c86b8bbfdcd5",
+        "android_client_info": {
+          "package_name": "info.sayederfanarefin.torch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409532883943-kj6k0ip5cffdv9f3ehm49j3tfojbb3rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTLMmZ07o8oyYhzA97jO667-KkLU_DDo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
