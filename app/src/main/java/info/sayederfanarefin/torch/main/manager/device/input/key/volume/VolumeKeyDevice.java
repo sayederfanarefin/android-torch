@@ -20,8 +20,8 @@ package info.sayederfanarefin.torch.main.manager.device.input.key.volume;
 
 import android.content.Context;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.InputDevice;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.input.InputDevice;
+import info.sayederfanarefin.torch.utils.Constants;
 
 /**
  * Created by I327891 on 05-Feb-17.

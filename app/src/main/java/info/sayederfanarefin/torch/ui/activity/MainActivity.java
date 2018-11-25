@@ -32,20 +32,20 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.main.TorchieManagerListener;
-import info.sayederfanarefin.anselmbros.torch.main.manager.TorchManager;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.OutputDeviceListener;
-import info.sayederfanarefin.anselmbros.torch.service.TorchieQuick;
-import info.sayederfanarefin.anselmbros.torch.ui.fragment.dialog.AboutDialog;
-import info.sayederfanarefin.anselmbros.torch.ui.fragment.dialog.DonateDialog;
-import info.sayederfanarefin.anselmbros.torch.ui.fragment.dialog.DonateFailDialog;
-import info.sayederfanarefin.anselmbros.torch.ui.fragment.dialog.DonateSuccessDialog;
-import info.sayederfanarefin.anselmbros.torch.ui.fragment.dialog.PermissionDialog;
-import info.sayederfanarefin.anselmbros.torch.ui.fragment.dialog.WelcomeDialog;
-import info.sayederfanarefin.anselmbros.torch.ui.helper.DonateDialogListener;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
-import info.sayederfanarefin.anselmbros.torch.utils.SettingsUtils;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.main.TorchieManagerListener;
+import info.sayederfanarefin.torch.main.manager.TorchManager;
+import info.sayederfanarefin.torch.main.manager.device.output.OutputDeviceListener;
+import info.sayederfanarefin.torch.service.TorchieQuick;
+import info.sayederfanarefin.torch.ui.fragment.dialog.AboutDialog;
+import info.sayederfanarefin.torch.ui.fragment.dialog.DonateDialog;
+import info.sayederfanarefin.torch.ui.fragment.dialog.DonateFailDialog;
+import info.sayederfanarefin.torch.ui.fragment.dialog.DonateSuccessDialog;
+import info.sayederfanarefin.torch.ui.fragment.dialog.PermissionDialog;
+import info.sayederfanarefin.torch.ui.fragment.dialog.WelcomeDialog;
+import info.sayederfanarefin.torch.ui.helper.DonateDialogListener;
+import info.sayederfanarefin.torch.utils.Constants;
+import info.sayederfanarefin.torch.utils.SettingsUtils;
 import info.sayederfanarefin.torch.main.TorchieManagerListener;
 import info.sayederfanarefin.torch.main.manager.TorchManager;
 import info.sayederfanarefin.torch.ui.fragment.dialog.AboutDialog;
@@ -119,9 +119,9 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_donate:
-                showDialogDonate(null);
-                break;
+//            case R.id.menu_donate:
+//                showDialogDonate(null);
+//                break;
             case R.id.menu_tell_friend:
                 Intent int_tell = new Intent(Intent.ACTION_SEND);
                 int_tell.setType("text/plain");

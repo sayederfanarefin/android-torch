@@ -23,7 +23,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.CheckBox;
 
-import info.sayederfanarefin.anselmbros.torch.R;
+import info.sayederfanarefin.torch.R;
 
 /**
  * Created by I327891 on 27-Jan-17.

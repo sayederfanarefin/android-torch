@@ -27,7 +27,7 @@ import android.preference.PreferenceManager;
 
 import java.util.Locale;
 
-import info.sayederfanarefin.anselmbros.torch.utils.SettingsUtils;
+import info.sayederfanarefin.torch.utils.SettingsUtils;
 
 /**
  * Created by I327891 on 19-Feb-17.

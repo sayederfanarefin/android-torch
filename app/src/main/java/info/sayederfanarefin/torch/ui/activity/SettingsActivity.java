@@ -22,7 +22,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import info.sayederfanarefin.anselmbros.torch.R;
+import info.sayederfanarefin.torch.R;
 
 public class SettingsActivity extends AppCompatActivity {
 

@@ -27,8 +27,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.utils.SettingsUtils;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.utils.SettingsUtils;
 
 /**
  * Created by anselm94 on 8/12/15.

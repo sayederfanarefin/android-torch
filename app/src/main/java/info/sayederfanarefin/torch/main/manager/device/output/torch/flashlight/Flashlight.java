@@ -20,8 +20,8 @@ package info.sayederfanarefin.torch.main.manager.device.output.torch.flashlight;
 
 import android.content.Context;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.Torch;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.Torch;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.utils.Constants;
 
 /**

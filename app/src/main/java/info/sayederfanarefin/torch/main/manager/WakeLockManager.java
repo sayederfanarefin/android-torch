@@ -21,9 +21,9 @@ package info.sayederfanarefin.torch.main.manager;
 import android.content.Context;
 import android.util.Log;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.timer.CountTimer;
-import info.sayederfanarefin.anselmbros.torch.main.manager.timer.CountTimerListener;
-import info.sayederfanarefin.anselmbros.torch.main.manager.wakelock.WakeLock;
+import info.sayederfanarefin.torch.main.manager.timer.CountTimer;
+import info.sayederfanarefin.torch.main.manager.timer.CountTimerListener;
+import info.sayederfanarefin.torch.main.manager.wakelock.WakeLock;
 
 /**
  * Created by I327891 on 05-Feb-17.

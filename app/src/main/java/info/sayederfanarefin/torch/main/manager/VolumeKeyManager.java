@@ -21,11 +21,11 @@ package info.sayederfanarefin.torch.main.manager;
 import android.content.Context;
 import android.os.Build;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.InputDeviceListener;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.event.VolumeKeyEvent;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.key.volume.nativve.VolumeKeyNative;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.key.volume.rocker.VolumeKeyRocker;
+import info.sayederfanarefin.torch.main.manager.device.input.InputDeviceListener;
+import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
+import info.sayederfanarefin.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
+import info.sayederfanarefin.torch.main.manager.device.input.key.volume.nativve.VolumeKeyNative;
+import info.sayederfanarefin.torch.main.manager.device.input.key.volume.rocker.VolumeKeyRocker;
 import info.sayederfanarefin.torch.main.manager.device.input.InputDeviceListener;
 import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
 import info.sayederfanarefin.torch.main.manager.device.input.key.volume.VolumeKeyDevice;

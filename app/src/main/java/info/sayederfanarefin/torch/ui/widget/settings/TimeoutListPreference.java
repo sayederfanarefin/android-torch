@@ -24,7 +24,7 @@ import android.content.res.Resources;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
 
-import info.sayederfanarefin.anselmbros.torch.R;
+import info.sayederfanarefin.torch.R;
 
 /**
  * Created by I327891 on 27-Jan-17.

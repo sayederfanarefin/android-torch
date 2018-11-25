@@ -20,7 +20,7 @@ package info.sayederfanarefin.torch.utils;
 
 import android.util.Log;
 
-import info.sayederfanarefin.anselmbros.torch.BuildConfig;
+import info.sayederfanarefin.torch.BuildConfig;
 
 /**
  * Created by I327891 on 02-Feb-17.

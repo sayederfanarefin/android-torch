@@ -21,9 +21,9 @@ package info.sayederfanarefin.torch.main.manager.device.input.key.volume.rocker;
 import android.content.Context;
 import android.view.InputEvent;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.event.VolumeKeyEvent;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
+import info.sayederfanarefin.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
 import info.sayederfanarefin.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
 

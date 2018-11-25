@@ -29,8 +29,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.TextView;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.utils.Constants;
 
 /**
  * Created by anselm94 on 8/12/15.

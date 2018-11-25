@@ -22,9 +22,9 @@ import android.content.Context;
 import android.view.InputEvent;
 import android.view.KeyEvent;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.event.VolumeKeyEvent;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
+import info.sayederfanarefin.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
 import info.sayederfanarefin.torch.main.manager.device.input.key.volume.VolumeKeyDevice;
 

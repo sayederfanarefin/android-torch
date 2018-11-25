@@ -26,7 +26,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.NotificationCompat;
 
-import info.sayederfanarefin.anselmbros.torch.R;
+import info.sayederfanarefin.torch.R;
 
 /**
  * Created by I327891 on 22-Mar-17.

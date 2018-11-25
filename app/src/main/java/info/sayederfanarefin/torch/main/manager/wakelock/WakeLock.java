@@ -23,7 +23,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.PowerManager;
 
-import info.sayederfanarefin.anselmbros.torch.R;
+import info.sayederfanarefin.torch.R;
 
 /**
  * Created by I327891 on 05-Feb-17.
@@ -31,7 +31,7 @@ import info.sayederfanarefin.anselmbros.torch.R;
 
 public class WakeLock {
 
-    public static final String TYPE = "in.blogspot.anselmbros.torchie.Wakelock";
+    public static final String TYPE = "in.blogspot.torchie.Wakelock";
 
     private MediaPlayer mediaPlayer;
     private boolean isWakelockHeld;

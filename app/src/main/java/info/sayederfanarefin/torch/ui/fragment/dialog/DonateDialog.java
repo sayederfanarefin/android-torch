@@ -35,14 +35,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import info.sayederfanarefin.anselmbros.torch.BuildConfig;
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.ui.helper.DonateDialogListener;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
-import info.sayederfanarefin.anselmbros.torch.utils.IabUtils.IabHelper;
-import info.sayederfanarefin.anselmbros.torch.utils.IabUtils.IabResult;
-import info.sayederfanarefin.anselmbros.torch.utils.IabUtils.Inventory;
-import info.sayederfanarefin.anselmbros.torch.utils.IabUtils.Purchase;
+import info.sayederfanarefin.torch.BuildConfig;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.ui.helper.DonateDialogListener;
+import info.sayederfanarefin.torch.utils.Constants;
+import info.sayederfanarefin.torch.utils.IabUtils.IabHelper;
+import info.sayederfanarefin.torch.utils.IabUtils.IabResult;
+import info.sayederfanarefin.torch.utils.IabUtils.Inventory;
+import info.sayederfanarefin.torch.utils.IabUtils.Purchase;
 
 /**
  * Created by anselm94 on 9/12/15.

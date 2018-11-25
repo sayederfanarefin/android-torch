@@ -25,10 +25,10 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.view.InputEvent;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.InputDevice;
-import info.sayederfanarefin.anselmbros.torch.main.manager.timer.CountTimer;
-import info.sayederfanarefin.anselmbros.torch.main.manager.timer.CountTimerListener;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.input.InputDevice;
+import info.sayederfanarefin.torch.main.manager.timer.CountTimer;
+import info.sayederfanarefin.torch.main.manager.timer.CountTimerListener;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.main.manager.device.input.InputDevice;
 import info.sayederfanarefin.torch.main.manager.timer.CountTimer;
 import info.sayederfanarefin.torch.main.manager.timer.CountTimerListener;

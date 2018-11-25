@@ -20,8 +20,8 @@ package info.sayederfanarefin.torch.main.manager.device.output;
 
 import android.content.Context;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.Device;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.Device;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.main.manager.device.Device;
 import info.sayederfanarefin.torch.utils.Constants;
 

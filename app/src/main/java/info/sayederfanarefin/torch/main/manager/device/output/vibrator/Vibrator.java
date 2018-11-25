@@ -20,9 +20,9 @@ package info.sayederfanarefin.torch.main.manager.device.output.vibrator;
 
 import android.content.Context;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.OutputDevice;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.main.manager.device.output.OutputDevice;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.utils.Constants;
 
 /**

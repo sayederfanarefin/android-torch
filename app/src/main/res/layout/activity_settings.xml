@@ -34,7 +34,7 @@
 
     <fragment
         android:id="@+id/frag_settings"
-        android:name="info.sayederfanarefin.anselmbros.torch.ui.fragment.SettingsFragment"
+        android:name="info.sayederfanarefin.torch.ui.fragment.SettingsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize" />

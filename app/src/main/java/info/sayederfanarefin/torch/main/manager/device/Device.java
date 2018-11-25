@@ -20,7 +20,7 @@ package info.sayederfanarefin.torch.main.manager.device;
 
 import android.content.Context;
 
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.utils.Constants;
 
 /**
  * Created by I327891 on 04-Feb-17.

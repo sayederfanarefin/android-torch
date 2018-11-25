@@ -25,8 +25,8 @@ import android.hardware.Camera;
 import java.io.IOException;
 import java.util.List;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.utils.Constants;
 
 /**

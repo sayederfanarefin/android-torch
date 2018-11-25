@@ -18,7 +18,7 @@
 
 package info.sayederfanarefin.torch.main.manager.device.output;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.DeviceListener;
+import info.sayederfanarefin.torch.main.manager.device.DeviceListener;
 import info.sayederfanarefin.torch.main.manager.device.DeviceListener;
 
 /**

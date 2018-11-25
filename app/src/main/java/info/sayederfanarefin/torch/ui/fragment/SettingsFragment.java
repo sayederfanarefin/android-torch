@@ -29,12 +29,12 @@ import android.preference.CheckBoxPreference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.vibrator.Vibrator;
-import info.sayederfanarefin.anselmbros.torch.service.TorchieQuick;
-import info.sayederfanarefin.anselmbros.torch.ui.activity.MainActivity;
-import info.sayederfanarefin.anselmbros.torch.ui.widget.settings.CheckBoxDialogPreference;
-import info.sayederfanarefin.anselmbros.torch.utils.SettingsUtils;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.main.manager.device.output.vibrator.Vibrator;
+import info.sayederfanarefin.torch.service.TorchieQuick;
+import info.sayederfanarefin.torch.ui.activity.MainActivity;
+import info.sayederfanarefin.torch.ui.widget.settings.CheckBoxDialogPreference;
+import info.sayederfanarefin.torch.utils.SettingsUtils;
 
 import static android.content.Context.SENSOR_SERVICE;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;

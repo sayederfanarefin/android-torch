@@ -21,14 +21,14 @@ package info.sayederfanarefin.torch.main.manager;
 import android.content.Context;
 import android.os.Build;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.OutputDeviceListener;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.Torch;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.flashlight.Flashlight;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.flashlight.Flashlight1;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.flashlight.Flashlight2;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.screenlight.Screenlight;
-import info.sayederfanarefin.anselmbros.torch.main.manager.timer.CountTimer;
-import info.sayederfanarefin.anselmbros.torch.main.manager.timer.CountTimerListener;
+import info.sayederfanarefin.torch.main.manager.device.output.OutputDeviceListener;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.Torch;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.flashlight.Flashlight;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.flashlight.Flashlight1;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.flashlight.Flashlight2;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.screenlight.Screenlight;
+import info.sayederfanarefin.torch.main.manager.timer.CountTimer;
+import info.sayederfanarefin.torch.main.manager.timer.CountTimerListener;
 
 /**
  * Created by I327891 on 06-Feb-17.

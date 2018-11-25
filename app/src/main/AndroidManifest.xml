@@ -67,7 +67,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
-                <action android:name="in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY" />
+                <action android:name="in.blogspot.torchie.CLOSE_ACTIVITY" />
             </intent-filter>
         </activity>
 

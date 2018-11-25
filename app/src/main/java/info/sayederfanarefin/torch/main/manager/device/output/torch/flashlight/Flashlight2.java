@@ -24,8 +24,8 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 
-import info.sayederfanarefin.anselmbros.torch.R;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.R;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.utils.Constants;
 
 /**

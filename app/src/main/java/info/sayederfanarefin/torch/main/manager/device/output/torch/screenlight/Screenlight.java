@@ -23,9 +23,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.Torch;
-import info.sayederfanarefin.anselmbros.torch.ui.activity.ScreenflashActivity;
-import info.sayederfanarefin.anselmbros.torch.utils.Constants;
+import info.sayederfanarefin.torch.main.manager.device.output.torch.Torch;
+import info.sayederfanarefin.torch.ui.activity.ScreenflashActivity;
+import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.ui.activity.ScreenflashActivity;
 import info.sayederfanarefin.torch.utils.Constants;
 
@@ -35,7 +35,7 @@ import info.sayederfanarefin.torch.utils.Constants;
 
 public class Screenlight extends Torch {
     public static final String TYPE = Constants.ID_DEVICE_OUTPUT_TORCH_SCREEN;
-    public final static String CLOSE_ACTIVITY_IDENTIFIER = "in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY";
+    public final static String CLOSE_ACTIVITY_IDENTIFIER = "in.blogspot.torchie.CLOSE_ACTIVITY";
 
     private ScreenlightOffReceiver screenlightOffReceiver;
 

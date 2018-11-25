@@ -27,9 +27,9 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import info.sayederfanarefin.anselmbros.torch.R;
+import info.sayederfanarefin.torch.R;
 
-import static info.sayederfanarefin.anselmbros.torch.main.manager.device.output.torch.screenlight.Screenlight.CLOSE_ACTIVITY_IDENTIFIER;
+import static info.sayederfanarefin.torch.main.manager.device.output.torch.screenlight.Screenlight.CLOSE_ACTIVITY_IDENTIFIER;
 
 public class ScreenflashActivity extends Activity {
 

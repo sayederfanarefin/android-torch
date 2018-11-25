@@ -28,10 +28,10 @@ import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
 
-import info.sayederfanarefin.anselmbros.torch.main.ScreenState;
-import info.sayederfanarefin.anselmbros.torch.main.TorchieManager;
-import info.sayederfanarefin.anselmbros.torch.main.TorchieManagerListener;
-import info.sayederfanarefin.anselmbros.torch.main.manager.device.input.event.VolumeKeyEvent;
+import info.sayederfanarefin.torch.main.ScreenState;
+import info.sayederfanarefin.torch.main.TorchieManager;
+import info.sayederfanarefin.torch.main.TorchieManagerListener;
+import info.sayederfanarefin.torch.main.manager.device.input.event.VolumeKeyEvent;
 import info.sayederfanarefin.torch.main.ScreenState;
 import info.sayederfanarefin.torch.main.TorchieManager;
 import info.sayederfanarefin.torch.main.TorchieManagerListener;

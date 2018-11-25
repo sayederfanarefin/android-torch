@@ -39,7 +39,7 @@ public class Constants {
     public final static String ID_DEVICE_INPUT_VOLUMEKEY_ROCKER = "22";
     public final static String ID_DEVICE_INPUT_PROXIMITY = "23";
 
-    public final static String PLAY_URI = "https://play.google.com/store/apps/details?id=in.blogspot.anselmbros.torchie";
+    public final static String PLAY_URI = "https://play.google.com/store/apps/details?id=in.blogspot.torchie";
     public final static String WEB_URI = "https://torchieapp.wordpress.com";
     public final static String ABOUTANSELM_URI = "http://anselmbros.blogspot.in/p/about-us.html";
     public final static String COMMUNITY_URI = "https://plus.google.com/communities/114100054385968340083";
