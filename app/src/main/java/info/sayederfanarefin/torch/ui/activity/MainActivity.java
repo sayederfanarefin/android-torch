@@ -19,18 +19,15 @@
 package info.sayederfanarefin.torch.ui.activity;
 
 import android.content.Intent;
-import android.graphics.drawable.TransitionDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -40,30 +37,18 @@ import info.sayederfanarefin.torch.main.manager.TorchManager;
 import info.sayederfanarefin.torch.main.manager.device.output.OutputDeviceListener;
 import info.sayederfanarefin.torch.service.TorchieQuick;
 import info.sayederfanarefin.torch.ui.fragment.dialog.AboutDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.DonateDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.DonateFailDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.DonateSuccessDialog;
 import info.sayederfanarefin.torch.ui.fragment.dialog.PermissionDialog;
 import info.sayederfanarefin.torch.ui.fragment.dialog.WelcomeDialog;
 import info.sayederfanarefin.torch.ui.helper.DonateDialogListener;
 import info.sayederfanarefin.torch.utils.Constants;
 import info.sayederfanarefin.torch.utils.SettingsUtils;
-import info.sayederfanarefin.torch.main.TorchieManagerListener;
-import info.sayederfanarefin.torch.main.manager.TorchManager;
-import info.sayederfanarefin.torch.ui.fragment.dialog.AboutDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.DonateDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.DonateFailDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.DonateSuccessDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.PermissionDialog;
-import info.sayederfanarefin.torch.ui.fragment.dialog.WelcomeDialog;
-import info.sayederfanarefin.torch.ui.helper.DonateDialogListener;
 
 public class MainActivity extends AppCompatActivity implements TorchieManagerListener, DonateDialogListener {
     ImageView but_flash;
     SwitchCompat sw_func_toggle;
 //
 //    TransitionDrawable transAnimButFlash;
-    DonateDialog donateDialog;
+
 
     boolean flashButtonStatus = false;
     int flashButAnimTime = 200;
@@ -169,17 +154,15 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
     @Override
     public void onDonateDialogResult(boolean isSuccess) {
         if (isSuccess) {
-            this.showDialogDonateSuccess();
+
         } else {
-            this.showDialogDonateFailure();
+
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (!(donateDialog.getDialog().isShowing() && donateDialog.handleActivityResult(requestCode, resultCode, data))) {
-            super.onActivityResult(requestCode, resultCode, data);
-        }
+
     }
 
     public void openAccessibilitySettings(View v) {
@@ -201,23 +184,8 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         permissionDialog.show(getFragmentManager(), "Permission Dialog");
     }
 
-    public void showDialogDonate(View v) {
-        if (donateDialog == null) {
-            donateDialog = new DonateDialog();
-            donateDialog.setListener(this);
-        }
-        donateDialog.show(getFragmentManager(), "Donate Dialog");
-    }
 
-    public void showDialogDonateSuccess() {
-        DonateSuccessDialog donateSuccessDialog = new DonateSuccessDialog();
-        donateSuccessDialog.show(getFragmentManager(), "Donate Success Dialog");
-    }
 
-    public void showDialogDonateFailure() {
-        DonateFailDialog donateFailDialog = new DonateFailDialog();
-        donateFailDialog.show(getFragmentManager(), "Donate Fail Dialog");
-    }
 
     private void showDialogAbout() {
         AboutDialog aboutDialog = new AboutDialog();
