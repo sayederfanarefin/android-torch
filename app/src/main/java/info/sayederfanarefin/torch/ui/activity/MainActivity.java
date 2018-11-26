@@ -120,17 +120,29 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
                 int_rate.setData(Uri.parse(Constants.PLAY_URI));
                 startActivity(int_rate);
                 break;
-            case R.id.menu_about:
-                showDialogAbout();
-                break;
+//            case R.id.menu_about:
+//                showDialogAbout();
+//                break;
             case R.id.menu_settings:
                 Intent int_settings = new Intent(this, SettingsActivity.class);
                 startActivity(int_settings);
                 break;
             case R.id.menu_help_feedback:
-                Intent int_help = new Intent(Intent.ACTION_VIEW);
-                int_help.setData(Uri.parse(Constants.WEB_URI + "/contact"));
-                startActivity(int_help);
+
+                final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+
+                /* Fill it with Data */
+                emailIntent.setType("plain/text");
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"boson42apps@gmail.com"});
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "From Torch");
+                emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "I have been using your app, Torch");
+
+                /* Send it off to the Activity-Chooser */
+                startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+
+//                Intent int_help = new Intent(Intent.ACTION_VIEW);
+//                int_help.setData(Uri.parse(Constants.WEB_URI + "/contact"));
+//                startActivity(int_help);
                 break;
         }
         return true;
