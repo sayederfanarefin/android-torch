@@ -86,7 +86,7 @@
                 android:clickable="true"
                 android:elevation="2dp"
                 android:onClick="toggleTorch"
-                android:src="@mipmap/btn_switch_off"
+                android:src="@mipmap/btn_off"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:translationZ="6dp" />

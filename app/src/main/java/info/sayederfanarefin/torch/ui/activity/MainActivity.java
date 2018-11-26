@@ -197,11 +197,11 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         if (flashButtonStatus) {
             //transAnimButFlash.startTransition(flashButAnimTime);
             //Log.v("----------xxx--------", "if");
-            but_flash.setImageResource(R.mipmap.btn_switch_on);
+            but_flash.setImageResource(R.mipmap.btn_on);
 
         } else {
 
-            but_flash.setImageResource(R.mipmap.btn_switch_off);
+            but_flash.setImageResource(R.mipmap.btn_off);
 
             //Log.v("----------xxx--------", "else"); //transAnimButFlash.reverseTransition(flashButAnimTime);
         }
