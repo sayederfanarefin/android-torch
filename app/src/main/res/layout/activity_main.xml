@@ -20,13 +20,55 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_marginTop="8dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
             app:theme="@style/ThemeOverlay.AppCompat" />
 
 
+        <RelativeLayout
+            android:id="@+id/ll_func_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_below="@id/fl_flash_toggle"
+            android:background="?android:selectableItemBackground"
+            >
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Volume Button Control"
+                    android:layout_marginRight="16dp"/>
+
+
+                <ImageView
+                    android:id="@+id/enable_background_service"
+                    android:layout_width="@dimen/small_but_flash_size"
+                    android:layout_height="@dimen/small_but_flash_size"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/btn_off"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:translationZ="6dp"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:onClick="openAccessibilitySettings"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
 
 
 
@@ -34,7 +76,7 @@
             android:id="@+id/fl_flash_toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:orientation="vertical">
 
             <Space
@@ -61,40 +103,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
         </LinearLayout>
-        <RelativeLayout
-            android:id="@+id/ll_func_toggle"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:layout_weight="2"
-            android:layout_below="@id/fl_flash_toggle"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true"
-            android:elevation="2dp"
-            android:onClick="openAccessibilitySettings">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:orientation="horizontal"
-                android:layout_centerInParent="true"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Volume Button Control"
-                    android:layout_marginRight="16dp"/>
-                <android.support.v7.widget.SwitchCompat
-                    android:id="@+id/sw_func_toggle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:clickable="false" />
-
-
-            </LinearLayout>
-
-
-
-        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"

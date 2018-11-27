@@ -45,13 +45,15 @@ import info.sayederfanarefin.torch.utils.SettingsUtils;
 
 public class MainActivity extends AppCompatActivity implements TorchieManagerListener, DonateDialogListener {
     ImageView but_flash;
-    SwitchCompat sw_func_toggle;
+  //  SwitchCompat sw_func_toggle;
 //
 //    TransitionDrawable transAnimButFlash;
 
 
     boolean flashButtonStatus = false;
     int flashButAnimTime = 200;
+
+    ImageView smallButtonService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +65,8 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         getSupportActionBar().setTitle("");
 
         but_flash = (ImageView) findViewById(R.id.but_flash_pto);
-        sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
+        smallButtonService = (ImageView) findViewById(R.id.enable_background_service);
+      //  sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
 
 //        transAnimButFlash = (TransitionDrawable) but_flash.getBackground();
 //        transAnimButFlash.resetTransition();
@@ -83,7 +86,12 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
                 this.setFlashButtonStatus(this.isTorchOn());
             }
         }
-        sw_func_toggle.setChecked(isTorchieQuickServiceRunning());
+        //sw_func_toggle.setChecked(isTorchieQuickServiceRunning());
+        if(isTorchieQuickServiceRunning()){
+            smallButtonService.setImageResource(R.mipmap.btn_on);
+        }else{
+            smallButtonService.setImageResource(R.mipmap.btn_off);
+        }
     }
 
     @Override
@@ -178,12 +186,21 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
     }
 
     public void openAccessibilitySettings(View v) {
-        if (sw_func_toggle.isChecked()) {
+
+        if(isTorchieQuickServiceRunning()){
             Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
             startActivity(intent);
-        } else {
+        }else{
             this.showDialogPermission();
         }
+
+
+//        if (sw_func_toggle.isChecked()) {
+//            Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
+//            startActivity(intent);
+//        } else {
+//            this.showDialogPermission();
+//        }
     }
 
     private void showDialogWelcome() {
