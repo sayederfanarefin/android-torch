@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:background="@color/colorNew">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/background"
+        android:orientation="vertical"
+        android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -16,45 +18,23 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
             app:theme="@style/ThemeOverlay.AppCompat" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:layout_below="@id/toolbar"
-            android:background="@color/colorNew"
-            android:elevation="2dp" />
-
-        <LinearLayout
-            android:id="@+id/ll_func_toggle"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:layout_below="@id/toolbar"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true"
-            android:elevation="2dp"
-            android:onClick="openAccessibilitySettings"
-            android:orientation="horizontal">
-
-            <android.support.v7.widget.SwitchCompat
-                android:id="@+id/sw_func_toggle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:clickable="false" />
 
 
-        </LinearLayout>
+
 
 
         <LinearLayout
             android:id="@+id/fl_flash_toggle"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/ll_func_toggle"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
             android:orientation="vertical">
 
             <Space
@@ -81,7 +61,35 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_func_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="2"
+            android:layout_below="@id/fl_flash_toggle"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:onClick="openAccessibilitySettings"
+            android:orientation="horizontal">
 
-    </RelativeLayout>
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_func_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
