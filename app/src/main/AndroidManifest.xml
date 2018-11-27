@@ -25,6 +25,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7807255418905727~9583608766"/>
+
         <activity
             android:name="info.sayederfanarefin.torch.ui.activity.MainActivity"
             android:configChanges="orientation"

@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("");
 
+
+
         but_flash = (ImageView) findViewById(R.id.but_flash_pto);
         smallButtonService = (ImageView) findViewById(R.id.enable_background_service);
       //  sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
@@ -72,8 +74,10 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
 //        transAnimButFlash.resetTransition();
 
         if (SettingsUtils.isFirstTime(this)) {
-            this.showDialogWelcome();
+           // this.showDialogWelcome();
         }
+
+       // MobileAds.initialize(this, "ca-app-pub-7807255418905727~9583608766");
     }
 
     @Override
