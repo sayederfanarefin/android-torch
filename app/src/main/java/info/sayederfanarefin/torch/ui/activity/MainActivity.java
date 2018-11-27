@@ -31,6 +31,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
+
 import info.sayederfanarefin.torch.R;
 import info.sayederfanarefin.torch.main.TorchieManagerListener;
 import info.sayederfanarefin.torch.main.manager.TorchManager;
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
            // this.showDialogWelcome();
         }
 
-       // MobileAds.initialize(this, "ca-app-pub-7807255418905727~9583608766");
+        MobileAds.initialize(this, "ca-app-pub-7807255418905727~9583608766");
     }
 
     @Override
