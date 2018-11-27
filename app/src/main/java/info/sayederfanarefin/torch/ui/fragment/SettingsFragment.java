@@ -28,6 +28,9 @@ import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import info.sayederfanarefin.torch.R;
 import info.sayederfanarefin.torch.main.manager.device.output.vibrator.Vibrator;
@@ -50,7 +53,16 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.preferences);
+
         PreferenceManager.getDefaultSharedPreferences(this.getActivity().getApplicationContext()).registerOnSharedPreferenceChangeListener(this);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = super.onCreateView(inflater, container, savedInstanceState);
+        view.setBackgroundColor(getResources().getColor(R.color.colorNew));
+
+        return view;
     }
 
     @Override
