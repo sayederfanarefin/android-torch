@@ -31,6 +31,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 import info.sayederfanarefin.torch.R;
@@ -79,7 +81,12 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
            // this.showDialogWelcome();
         }
 
-        MobileAds.initialize(this, "ca-app-pub-7807255418905727~9583608766");
+        MobileAds.initialize(this, getString(R.string.APPLICATION_ID));
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest request = new AdRequest.Builder()
+                .addTestDevice("B7ED290654B835116908C4A987760A3E")
+                .build();
+        mAdView.loadAd(request);
     }
 
     @Override

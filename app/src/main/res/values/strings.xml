@@ -86,4 +86,7 @@
 
     <string name="notice"><b>Torch</b> v%1$s  &#169; 2018\n\nTorch comes with absolutely no warranty.</string>
 
+    <string name="APPLICATION_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <!-- ca-app-pub-7807255418905727~9583608766 -->
+
 </resources>
