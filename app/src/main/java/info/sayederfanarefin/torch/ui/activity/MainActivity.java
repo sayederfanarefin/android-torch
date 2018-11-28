@@ -72,10 +72,6 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
 
         but_flash = (ImageView) findViewById(R.id.but_flash_pto);
         smallButtonService = (ImageView) findViewById(R.id.enable_background_service);
-      //  sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
-
-//        transAnimButFlash = (TransitionDrawable) but_flash.getBackground();
-//        transAnimButFlash.resetTransition();
 
         if (SettingsUtils.isFirstTime(this)) {
            // this.showDialogWelcome();
@@ -84,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         MobileAds.initialize(this, getString(R.string.APPLICATION_ID));
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest request = new AdRequest.Builder()
-                .addTestDevice("B7ED290654B835116908C4A987760A3E")
+            //    .addTestDevice("B7ED290654B835116908C4A987760A3E")
                 .build();
         mAdView.loadAd(request);
     }

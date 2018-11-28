@@ -76,7 +76,8 @@
             android:id="@+id/fl_flash_toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="8"
+            android:layout_weight="6"
+            android:weightSum="6"
             android:orientation="vertical">
 
             <Space
@@ -88,6 +89,7 @@
                 android:id="@+id/but_flash_pto"
                 android:layout_width="@dimen/but_flash_size"
                 android:layout_height="@dimen/but_flash_size"
+                android:layout_weight="4"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:elevation="2dp"
@@ -106,7 +108,7 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
             android:orientation="vertical">
@@ -116,13 +118,13 @@
                 android:id="@+id/adView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
                 ads:adSize="BANNER"
                 ads:adUnitId="@string/APPLICATION_ID">
 
             </com.google.android.gms.ads.AdView>
         </LinearLayout>
+
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
