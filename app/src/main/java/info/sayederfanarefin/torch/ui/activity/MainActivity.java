@@ -33,6 +33,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 import info.sayederfanarefin.torch.R;
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
     int flashButAnimTime = 200;
 
     ImageView smallButtonService;
+    private InterstitialAd mInterstitialAd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +86,9 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
             //    .addTestDevice("B7ED290654B835116908C4A987760A3E")
                 .build();
         mAdView.loadAd(request);
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(getString(R.string.INTERSTATIAL_AD_ID));
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
 
     @Override
@@ -100,6 +106,15 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
             smallButtonService.setImageResource(R.mipmap.btn_on);
         }else{
             smallButtonService.setImageResource(R.mipmap.btn_off);
+        }
+    }
+
+    void showAd(){
+
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+
         }
     }
 
@@ -230,17 +245,22 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         aboutDialog.show(getFragmentManager(), "About Dialog");
     }
 
+    private int flag = 0;
+
     private void setFlashButtonStatus(boolean enabled) {
         flashButtonStatus = enabled;
         if (flashButtonStatus) {
             //transAnimButFlash.startTransition(flashButAnimTime);
             //Log.v("----------xxx--------", "if");
             but_flash.setImageResource(R.mipmap.btn_on);
+            flag ++;
 
         } else {
 
             but_flash.setImageResource(R.mipmap.btn_off);
-
+            if(flag > 0){
+                showAd();
+            }
             //Log.v("----------xxx--------", "else"); //transAnimButFlash.reverseTransition(flashButAnimTime);
         }
     }
